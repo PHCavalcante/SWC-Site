@@ -12,6 +12,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-image: linear-gradient(to bottom right, #675b8b, #a2afd4);
 }
@@ -44,7 +48,7 @@ body{
   
 }
   
-h1, h2{
+h1, h2, h3{
   font-family: 'Salsa', cursive;
   text-align:center;
   color: #ffffff;
@@ -63,7 +67,6 @@ h1, h2{
 }
 
 #download_button{
-  font-family: 'Salsa', cursive;
   display: flex;
   align-self: center;
   background-color: #882b2d;
@@ -78,6 +81,7 @@ h1, h2{
 }
 
 #download_button a{
+  font-family: 'Salsa', cursive;
   text-decoration: none;
   color: #ffffff;
 }
@@ -91,7 +95,7 @@ h1, h2{
   margin-right: 50px;
   border-width: 5px;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   color: #ffffff;
 }
 
@@ -128,33 +132,38 @@ h1, h2{
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   margin: .5rem;
   padding: 2rem 1rem;
   border-radius: 1rem;
   background-color: #675b8b;
 }
 
+#features li:hover{
+  background-color: #000000;
+}
+
 #boxversions{
   -webkit-animation: slide-in-fwd-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-in-fwd-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  float: right;
-  width: 150px;
-  height: auto;
-  background-color: rgba(221,221,221,0.8);
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 15px;
-  border-color: #876684;
-  
+  width: 50%;
+  margin: auto;
 }
 
-#boxversions h2{
+#boxversions div h2 ul li a{
   text-align: center;
 }
 
 #boxversions a{
   text-decoration: none;
+}
+
+#features_tittle{
+  font-size: 23px;
+}
+
+#little_presentation{
+  margin-bottom: 50px;
 }
 
 @-webkit-keyframes slide-in-fwd-center {
@@ -183,6 +192,7 @@ h1, h2{
 }
 
 #downloadbutton{
+  
   width: auto;
   height: auto;
   margin-left: 10px;
