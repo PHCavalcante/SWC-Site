@@ -21,8 +21,6 @@ body{
   margin: 0;
 }
 .navbar {
-    position: -webkit-sticky;
-    position: sticky;
     width: 100%;
     overflow: hidden;
     float: right;
@@ -91,7 +89,6 @@ h1, h2, h3, p{
   display: flex;
   margin: auto;
 }
-
 
 #boxsection{
   -webkit-animation: slide-in-fwd-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
