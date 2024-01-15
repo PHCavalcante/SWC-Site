@@ -18,30 +18,43 @@ html{
 
 body{
   background-image: linear-gradient(to bottom right, #675b8b, #a2afd4);
+  margin: 0;
 }
 .navbar {
+  position: -webkit-sticky;
+    position: sticky;
     width: 100%;
-    /*background-color: #000000;*/
+    overflow: hidden;
     float: right;
     margin-bottom: 40px;
-    height: auto;
-
+    top: 0px;
   }
   
-  .navbar a {
-    float: right;
-    text-align: center;
-    padding: 1px 16px;
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.navbar a {
+  display: block;
+  float: right;
+  text-align: center;
+  padding: 1px 16px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  .navbar a:hover {
-    background-color: #c99b9b;
-    color: black;
-    border-radius: 15px;
-  }
+.navbar a:hover {
+  background-color: #c99b9b;
+  color: black;
+  border-radius: 15px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  
+.sticky + .content {
+  padding-top: 60px;
+}
 
 #icon {
   float: left;
@@ -73,7 +86,7 @@ h1, h2, h3{
   border-radius: 15px;
   border: 5px solid #882b2d;
   color: #ffffff;
-  padding: 10px 32px;
+  padding: 3px 20px;
   margin: auto;
   text-align: center;
   cursor: pointer;
@@ -85,6 +98,12 @@ h1, h2, h3{
   text-decoration: none;
   color: #ffffff;
 }
+
+#git_logo img{
+  display: flex;
+  margin: auto;
+}
+
 
 #boxsection{
   -webkit-animation: slide-in-fwd-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -122,13 +141,16 @@ h1, h2, h3{
 
 #features{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  float: left;
+  width: 700px;
+  grid-template-columns: 1fr;
   list-style: none;
   padding: 0;
   margin: auto;
 }
 
 #features li{
+  width: 300px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -137,21 +159,41 @@ h1, h2, h3{
   padding: 2rem 1rem;
   border-radius: 1rem;
   background-color: #675b8b;
+  transition: all 1s ease-in-out;
 }
 
 #features li:hover{
-  background-color: #000000;
+  width: 400px;
+  padding-right: 200px;
+  visibility: visible;
+}
+
+#features li img{
+  visibility: hidden;
 }
 
 #boxversions{
   -webkit-animation: slide-in-fwd-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-in-fwd-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  width: 50%;
-  margin: auto;
+  float: right;
+  height: auto;
+  margin-right: 25px;
+  display: block;
+  
 }
 
-#boxversions div h2 ul li a{
-  text-align: center;
+#boxversions ul{
+  color:#ffffff;
+  align-self: center;
+  margin: auto;
+  padding: 0;
+}
+
+#boxversions li, a{
+  padding-bottom: 15px;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
 }
 
 #boxversions a{
@@ -191,23 +233,7 @@ h1, h2, h3{
   }
 }
 
-#downloadbutton{
-  
-  width: auto;
-  height: auto;
-  margin-left: 10px;
-  border-radius: 20px;
-  background-color: #000000;
-  color: #ffffff;
-}
-
-#downloadbutton a{
-  text-decoration: none;
-  color: #ffffff;
-  font-size:large;
-}
-
-#downloadbutton:hover{
+#download_button:hover{
   display: flex;
   -webkit-animation: shake-horizontal 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 	animation: shake-horizontal 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
