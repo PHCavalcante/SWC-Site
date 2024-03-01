@@ -134,6 +134,14 @@ h1, h2, h3, p{
   margin: auto;
 }
 
+#features p{
+  font-size: 15px;
+}
+
+#features .titles{
+  font-size: 15px;
+}
+
 #features li{
   width: 300px;
   display: flex;
@@ -154,15 +162,19 @@ h1, h2, h3, p{
 }
 
 #features li:hover img{
-  width: 300px;
-  height: 150px;
+  width: 500px;
+  height: 300px;
   padding: 2rem 1rem;
   float: right;
   visibility: visible;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
 }
 
 #features img{
   visibility: hidden;
+  transition: all 1s ease-in-out;
+  border-radius: 50px;
 }
 
 #boxversions{
@@ -200,6 +212,8 @@ h1, h2, h3, p{
 
 #features_tittle{
   font-size: 23px;
+  margin-top: 200px;
+  margin-bottom: 80px;
 }
 
 #little_presentation{
@@ -243,7 +257,7 @@ img{
   margin-left: 10px;
 }
 
-#boxsection img:hover{
+#boxsection .image_buttons:hover{
   -webkit-animation: shake-horizontal 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 	animation: shake-horizontal 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
