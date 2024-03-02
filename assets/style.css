@@ -127,7 +127,7 @@ h1, h2, h3, p{
 #features{
   display:grid;
   float: left;
-  width: 700px;
+  width: auto;
   grid-template-columns: 1fr;
   list-style: none;
   padding: 0;
@@ -173,6 +173,9 @@ h1, h2, h3, p{
 
 #features img{
   visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: auto;
   transition: all 1s ease-in-out;
   border-radius: 50px;
 }
@@ -180,10 +183,14 @@ h1, h2, h3, p{
 #boxversions{
   -webkit-animation: slide-in-fwd-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-in-fwd-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  float: right;
+  width: 150px;
   height: auto;
-  margin-right: 25px;
-  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-right: 10px;
+  float: right;
+  display: flex;
+  flex-direction: column;
   border-right: solid 5px #ffffff;
   border-left: solid 5px #ffffff; 
 }
