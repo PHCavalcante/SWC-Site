@@ -195,6 +195,16 @@ h1, h2, h3, p{
   border-left: solid 5px #ffffff; 
 }
 
+#boxversions_getswc{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 150px;
+  border-right: solid 5px #ffffff;
+  border-left: solid 5px #ffffff; 
+}
+
 #boxversions ul{
   color:#ffffff;
   align-self: center;
@@ -202,19 +212,23 @@ h1, h2, h3, p{
   padding: 0;
 }
 
-#boxversions li, a{
+#boxversions, #boxversions_getswc li, a{
   padding-bottom: 15px;
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
 
-#boxversions a{
+#boxversions, #boxversions_getswc a{
   text-decoration: none;
 }
 
-#boxversions h2, li{
+#boxversions, #boxversions_getswc h2, li{
   margin-right: 25px;
+}
+
+#boxversions h2{
+  padding-right: 30px;
 }
 
 #features_tittle{
